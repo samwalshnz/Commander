@@ -14,7 +14,7 @@ trait CommanderTrait {
      * @param  array $decorators
      * @return mixed
      */
-    protected function execute($command, array $input = null, $decorators = [])
+    protected function executeCommand($command, array $input = null, $decorators = [])
     {
         $input = $input ?: Input::all();
 
